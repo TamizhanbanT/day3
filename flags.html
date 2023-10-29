@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>xml</title>
+</head>
+<body>
+    <script>
+        
+
+const URL="https://restcountries.com/v3.1/all";
+const MyRqst= new XMLHttpRequest();
+
+
+MyRqst.open("GET",URL);
+MyRqst.send()
+MyRqst.addEventListener("load",function(){
+    const obj=JSON.parse(this.response)
+        obj.forEach(x => {
+            console.log(x.flags.png)
+            
+        });
+}
+);
+
+MyRqst.open("GET",URL);
+MyRqst.send()
+
+    </script>
+</body>
+</html>
