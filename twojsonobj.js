@@ -4,8 +4,8 @@
     return JSON.stringify(obj1) === JSON.stringify(obj2);
   } */
   
-  const json1 = { name:"tamizh",age:25 };
-  const json2 = { age:25,name:"tamizh"};
+  const json1 = { name:"Person1",age:5 };
+  const json2 = { age:5,name:"Person1"};
   
  let key1=Object.keys(json1);
  let key2=Object.keys(json2);
